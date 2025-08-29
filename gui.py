@@ -171,6 +171,7 @@ class FTPGuiApp(QWidget):
 
     def log_message(self, message):
         self.log_view.append(message)
+        print(message) #whenever you add message, print it, cause it's cool to see what's going on rn
 
     def update_ip_addresses(self):
         ip_addresses = get_ip_addresses()

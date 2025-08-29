@@ -8,15 +8,7 @@
 - simple connection from Explorer: `ftp://user:123@192.168.1.5` to access hosted files in RW mode
 
 #### Default values for `ftp-config.cfg`
-```
-[FTP]
-username = user
-password = 123
-port = 21
-ftp_directory = C:\Temp\FTP
-run_as_daemon = 0
-log_file = ftp_log.txt
-```
+They are generated based on current OS when you run program for the very first time.
 
 #### Requirements:
 ```
@@ -37,7 +29,6 @@ Pillow # optional if you do not use .ico file but other image format
 
 ### Linux:
 - It works on linux too, but for now you can run only ports 1024+ or you need to run it with sudo
-- It also creates the folder from where it is run "C:\Temp\FTP" or the folder in cfg file
 - Also on Linux it does not quit with buttons when FTP started, it must be killed, or `ctrl+c` when opened from terminal
 
 ### Windows building is simple as:
